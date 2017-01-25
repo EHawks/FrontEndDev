@@ -1,0 +1,18 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+  		
+
+---
+
+Your response goes here!
+
+1. I have learned about image tags how to use Mozilla's site for tag defenitions.
+
+2. Most of the attribute tags I was familiar with already, so that part was more like a refresher.
+
+3. Doing text formatting within a paragraph tag. I am not used to have to use a tag to bold somtehing or underline. It will take some getting used to as well as remember to make sure that I do it.
+
+4. I have used the Mozilla page serval times. I searched Stack Overflow for help with an img defenition. I also used w3schools for help with a superscript tag.
