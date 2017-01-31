@@ -1,0 +1,61 @@
+.fact {
+  font-style: italic;
+  font-size: 1.3em;
+  margin-top: 0px;
+}
+
+.description {
+  font-size: 1.3em;
+  margin-bottom: 0px;
+}
+
+.top-section {
+  border: 2px solid black;
+  background: linear-gradient(to top, #162745 45%, #29c30d);
+}
+
+.bottom-section {
+  border: 2px solid #65ff00;
+  margin: 20px;
+  padding: 10px;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.picture {
+  width: 300px;
+  height: 450px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  border: 2px solid #65ff00;
+}
+
+body {
+  width: 350px;
+}
+
+.title {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding-left: 5px;
+  font-size: 2em;
+  color: #162745;
+  border: 2px solid #162745;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.text{
+  font-family: 'Shadows Into Light', cursive, sans-serif;
+}
+
+.list-item {
+  list-style-type: none;
+}
+
+.bold {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
