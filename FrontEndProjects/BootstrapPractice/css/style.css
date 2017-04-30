@@ -52,6 +52,9 @@ h1 {
     vertical-align: top;
 }
 .tile-name {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     border-bottom: 1px solid orange;
+}
+.tile-list {
+    
 }
