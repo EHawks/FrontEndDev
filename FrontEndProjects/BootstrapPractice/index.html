@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
-    <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
+    <script src="js/Sortable/Sortable.js"></script>
 
     <title>Field of Dreams Ultimate</title>
 
@@ -58,10 +58,7 @@
                         <div class="tile-list">
                             <img src="images/Batman_Lego.png">
                             <img src="images/Ironman_Lego.png">
-                            <img src="images/Joker_Lego.png">
                             <img src="images/Robin_Lego.png">
-                            <img src="images/Superman_Lego.png">
-                            <img src="images/Thor_Lego.png">
                         </div>
                     </div>
                 </div>
@@ -71,7 +68,10 @@
                     <div class="col-sm-12">
                         <div class="team-tile" id="white-team-list">
                             <div class="tile-name">White Team</div>
-                            <div class="tile-list"></div>
+                            <div class="tile-list">
+                                <img src="images/Thor_Lego.png">
+                                <img src="images/Superman_Lego.png">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,10 +79,15 @@
                     <div class="col-sm-12">
                         <div class="team-tile" id="black-team-list">
                             <div class="tile-name">Black Team</div>
-                            <div class="tile-list"></div>
+                            <div class="tile-list">
+                                <img src="images/Joker_Lego.png">
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
             </div>
         </div>
 
