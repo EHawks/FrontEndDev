@@ -1,55 +1,64 @@
-(function () {
-	'use strict';
+(function() {
+    'use strict';
 
-	var byId = function (id) { return document.getElementById(id); },
+    var byId = function(id) {
+            return document.getElementById(id);
+        },
 
-		loadScripts = function (desc, callback) {
-			var deps = [], key, idx = 0;
+        loadScripts = function(desc, callback) {
+            var deps = [],
+                key, idx = 0;
 
-			for (key in desc) {
-				deps.push(key);
-			}
+            for (key in desc) {
+                deps.push(key);
+            }
 
-			(function _next() {
-				var pid,
-					name = deps[idx],
-					script = document.createElement('script');
+            (function _next() {
+                var pid,
+                    name = deps[idx],
+                    script = document.createElement('script');
 
-				script.type = 'text/javascript';
-				script.src = desc[deps[idx]];
+                script.type = 'text/javascript';
+                script.src = desc[deps[idx]];
 
-				pid = setInterval(function () {
-					if (window[name]) {
-						clearTimeout(pid);
+                pid = setInterval(function() {
+                    if (window[name]) {
+                        clearTimeout(pid);
 
-						deps[idx++] = window[name];
+                        deps[idx++] = window[name];
 
-						if (deps[idx]) {
-							_next();
-						} else {
-							callback.apply(null, deps);
-						}
-					}
-				}, 30);
+                        if (deps[idx]) {
+                            _next();
+                        } else {
+                            callback.apply(null, deps);
+                        }
+                    }
+                }, 30);
 
-				document.getElementsByTagName('head')[0].appendChild(script);
-			})()
-		},
+                document.getElementsByTagName('head')[0].appendChild(script);
+            })()
+        },
 
-		console = window.console;
+        console = window.console;
 
 
-	if (!console.log) {
-		console.log = function () {
-			alert([].join.apply(arguments, ' '));
-		};
-	}
+    if (!console.log) {
+        console.log = function() {
+            alert([].join.apply(arguments, ' '));
+        };
+    }
 
-	[].forEach.call(byId('player-section').getElementsByClassName('tile-list'), function (el){
-		Sortable.create(el, {
-			group: 'photo',
-			animation: 150
-		});
-	});
+    Sortable.create(byId('player-section'), {
+        animation: 150,
+        draggable: '.tile',
+        handle: '.tile__name'
+    });
+
+    [].forEach.call(byId('player-section').getElementsByClassName('tile-list'), function(el) {
+        Sortable.create(el, {
+            group: 'photo',
+            animation: 150
+        });
+    });
 
 })();
