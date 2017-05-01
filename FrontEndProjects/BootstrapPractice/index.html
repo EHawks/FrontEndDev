@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
+    <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
 
     <title>Field of Dreams Ultimate</title>
 
 </head>
+
 <body>
     <div id="background-picture">
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -48,13 +50,18 @@
             </section>
         </div>
 
-        <div class="container text-center">
+        <div class="container text-center" id="player-section">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="layer tile">
-                        <div class="team-tile">
-                            <div class="tile-name">Pool</div>
-                            <div class="tile-list"></div>
+                    <div class="pool-tile" id="pool-team-list">
+                        <div class="tile-name">Pool</div>
+                        <div class="tile-list">
+                            <img src="images/Batman_Lego.png">
+                            <img src="images/Ironman_Lego.png">
+                            <img src="images/Joker_Lego.png">
+                            <img src="images/Robin_Lego.png">
+                            <img src="images/Superman_Lego.png">
+                            <img src="images/Thor_Lego.png">
                         </div>
                     </div>
                 </div>
@@ -62,7 +69,7 @@
             <div class="row">
                 <div class="col-sm-6 team-bg">
                     <div class="col-sm-12">
-                        <div class="team-tile">
+                        <div class="team-tile" id="white-team-list">
                             <div class="tile-name">White Team</div>
                             <div class="tile-list"></div>
                         </div>
@@ -70,7 +77,7 @@
                 </div>
                 <div class="col-sm-6 team-bg">
                     <div class="col-sm-12">
-                        <div class="team-tile">
+                        <div class="team-tile" id="black-team-list">
                             <div class="tile-name">Black Team</div>
                             <div class="tile-list"></div>
                         </div>
@@ -82,7 +89,6 @@
         <script src=js/jquery-3.1.1.min.js></script>
         <script src=js/bootstrap.min.js></script>
         <script src=js/scripts.js></script>
-        <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
 
 </body>
 
