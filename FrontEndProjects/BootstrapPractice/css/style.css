@@ -6,13 +6,16 @@
     background-repeat: no-repeat;
     min-height: 640px;
 }
-
+@font-face{
+    font-family: SportsNight; src: url('../fonts/SFSportsNight.ttf');
+}
 body {
     padding-top: 50px;
     font-family: 'Arvo', serif;
 }
 h1 {
     font-size: 50px;
+    font-family: SportsNight, serif;
 }
 .navbar {
     margin-bottom: 0;
@@ -29,17 +32,18 @@ h1 {
 .navbar-nav li a:hover {
     color: #fff;
 }
+#play-time {
+    background-color: red;
+}
 .white-outline {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #team-text {
-    color: #507891;
+    color: #0a23f5;
 }
-.pool-tile{
-    width: 85%;
+.tile{
     min-width: 245px;
-    color: orange;
     padding: 10px 30px;
     text-align: center;
     margin-top: 15px;
@@ -48,38 +52,61 @@ h1 {
     display: inline-block;
     vertical-align: top;
     border-radius: 15px;
-    background-color: black;
 
 }
-.team-tile {
+.pool-team{
+    width: 90%;
+}
+.white-team {
     width: 100%;
-    min-width: 245px;
-    color: orange;
-    padding: 10px 30px;
-    text-align: center;
-    margin-top: 15px;
-    margin-left: 5px;
-    margin-right: 30px;
-    background-color: #fff;
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.black-team {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 .tile-name {
-    padding-bottom: 10px;
-    border-bottom: 1px solid orange;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
 }
 .tile-list img {
     cursor: move;
 	margin: 10px;
 	border-radius: 100%;
-    width: 100px;
-    min-height: 100px;
+    width: 50px;
+    min-height: 50px;
+}
+
+.tile-list li {
+    list-style: none;
 }
 .tile-list:last-child {
     margin-right: 0;
     min-height: 80px;
 }
+.footer{
+    background-color: rgba(0, 0, 0, 1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 #reset-button {
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+.table-leaderboard {
+    background-color: white;
+    border-radius: 3px;
+}
+#email-link{
+    color:black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2px 6px 2px 6px;
+    font-weight: 400;
+    font-size: large;
+}
+#email-link:hover {
+    color: white;
+    background-color: black;
+
 }

@@ -39,26 +39,34 @@
         <div class="container">
             <section class="intro">
                 <h1 class="white-outline text-center">Field of Dreams Ultimate</h1>
-                <h3 class="white-outline">Start Time This Week: <kbd>6:00AM</kbd></h3>
+                <h3 class="white-outline">Start Time This Week: <kbd id="play-time">6:00AM</kbd></h3>
                 <p class="white-outline">
                     Please show up cleats on, warmed up and ready to start by this time.
                 </p>
             </section>
 
             <section class="content">
-                <h2 class="text-center text-underline" id="team-text"><u>Teams</u></h2>
+                <h2 class="text-center text-underline white-outline"><u>Teams</u></h2>
             </section>
         </div>
 
         <div class="container text-center" id="player-section">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="pool-tile" id="pool-team-list">
-                        <div class="tile-name">Pool</div>
+                    <div class="tile pool-team" id="pool-team-list">
+                        <div class="tile-name white-outline">Pool</div>
                         <div class="tile-list">
-                            <img src="images/Batman_Lego.png">
-                            <img src="images/Ironman_Lego.png">
-                            <img src="images/Robin_Lego.png">
+                            <img class="avatar" src="images/Batman_Lego.png">
+                            <img class="avatar" src="images/Ironman_Lego.png">
+                            <img class="avatar" src="images/Robin_Lego.png">
+                            <img class="avatar" src="images/Thor_Lego.png">
+                            <img class="avatar" src="images/Superman_Lego.png">
+                            <img class="avatar" src="images/Joker_Lego.png">
+                            <img class="avatar" src="images/Captain_Lego.png">
+                            <img class="avatar" src="images/Hulk_Lego.png">
+                            <img class="avatar" src="images/Spiderman_Lego.png">
+                            <img class="avatar" src="images/Thanos_Lego.png">
+                            <img class="avatar" src="images/Wolverine_Lego.png">
                         </div>
                     </div>
                 </div>
@@ -66,33 +74,79 @@
             <div class="row">
                 <div class="col-sm-6 team-bg">
                     <div class="col-sm-12">
-                        <div class="team-tile" id="white-team-list">
-                            <div class="tile-name">White Team</div>
+                        <div class="tile white-team" id="white-team-list">
+                            <div class="tile-name white-outline">White Team</div>
                             <div class="tile-list">
-                                <img src="images/Thor_Lego.png">
-                                <img src="images/Superman_Lego.png">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 team-bg">
                     <div class="col-sm-12">
-                        <div class="team-tile" id="black-team-list">
+                        <div class="tile black-team white-outline" id="black-team-list">
                             <div class="tile-name">Black Team</div>
                             <div class="tile-list">
-                                <img src="images/Joker_Lego.png">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
+                <button type="button" class="btn btn-success" id="submit-button">Lock-In</button>
                 <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
             </div>
         </div>
+        <div class="container">
+            <h2>Leaderboard</h2>
+            <table class="table table-striped table-leaderboard">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Superman</td>
+                        <td>200</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Joker</td>
+                        <td>199</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Robin</td>
+                        <td>0</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Batman</td>
+                        <td>100</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>>
+        </div>
+        <footer class="container-fluid- text-center footer">
+            <a href="#myPage" title="To Top">
+                <span class="glyphicon glyphicon-home"></span>
+            </a>
+            <div class="white-outline">
+                <h4>Issues? Please Contact: </h4>
+            </div>
+            <div id="email-address">
+                <a id="email-link" href="mailto:elliott.hawks@gmail.com">Elliott.Hawks@gmail.com</a>
+            </div>
+        </footer>
 
         <script src=js/jquery-3.1.1.min.js></script>
         <script src=js/bootstrap.min.js></script>
+        <script src=js/jquery-ui.min.js></script>
+        <script src=js/jquery.ui.touch-punch.min.js></script>
         <script src=js/scripts.js></script>
 
 </body>
