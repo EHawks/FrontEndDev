@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?Libre+Baskerville" rel="stylesheet">
     <script src="js/Sortable/Sortable.js"></script>
 
     <title>Field of Dreams Ultimate</title>
@@ -39,8 +39,8 @@
         <div class="container">
             <section class="intro">
                 <h1 class="white-outline text-center">Field of Dreams Ultimate</h1>
-                <h3 class="white-outline">Start Time This Week: <kbd id="play-time">6:00AM</kbd></h3>
-                <p class="white-outline">
+                <h3 class="white-outline text-center">Start Time This Week: <kbd id="play-time">6:00AM</kbd></h3>
+                <p class="white-outline text-center">
                     Please show up cleats on, warmed up and ready to start by this time.
                 </p>
             </section>
@@ -53,9 +53,9 @@
         <div class="container text-center" id="player-section">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="tile pool-team" id="pool-team-list">
+                    <div class="tile pool-team" >
                         <div class="tile-name white-outline">Pool</div>
-                        <div class="tile-list">
+                        <div id="pool-team-list" class="tile-list">
                             <img class="avatar" src="images/Batman_Lego.png">
                             <img class="avatar" src="images/Ironman_Lego.png">
                             <img class="avatar" src="images/Robin_Lego.png">
@@ -71,21 +71,24 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <button type="button" class="btn btn-warning">Add New</button>
+            </div>
             <div class="row">
                 <div class="col-sm-6 team-bg">
                     <div class="col-sm-12">
-                        <div class="tile white-team" id="white-team-list">
+                        <div class="tile white-team">
                             <div class="tile-name white-outline">White Team</div>
-                            <div class="tile-list">
+                            <div id="white-team-list" class="tile-list">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 team-bg">
                     <div class="col-sm-12">
-                        <div class="tile black-team white-outline" id="black-team-list">
+                        <div class="tile black-team white-outline">
                             <div class="tile-name">Black Team</div>
-                            <div class="tile-list">
+                            <div id="black-team-list" class="tile-list">
                             </div>
                         </div>
                     </div>

@@ -68,6 +68,7 @@ $(function() {
         helper: "clone",
         stack: ".avatar"
     });
+    $(".avatar").sortable();
     $(".tile-list").droppable({
         drop: function (event, ui) {
                 var teamContainer = $(this);
@@ -75,7 +76,14 @@ $(function() {
             }
     });
 
+
     function movePlayer($item, $team) {
         $team.append($item);
     }
+
+    $("#reset-button").click(function (){
+        $("#white-team-list > .avatar").appendTo("#pool-team-list");
+        $("#black-team-list > .avatar").appendTo("#pool-team-list");
+    });
+
 });

@@ -11,11 +11,17 @@
 }
 body {
     padding-top: 50px;
-    font-family: 'Arvo', serif;
+    font-family: 'Libre Baskerville', serif;
 }
 h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-family: SportsNight, serif;
+}
+h3 {
+    font-size: 36px;
+}
+p {
+    font-size: 22px;
 }
 .navbar {
     margin-bottom: 0;
@@ -92,6 +98,7 @@ h1 {
 #reset-button {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 15px;
 }
 .table-leaderboard {
     background-color: white;
